@@ -3,15 +3,17 @@
 <!-- {% include warning-curriculum.html %} -->
 {% endunless %}
 
-<br/>
-<div class="warning alert-warning">
-  <h4>Note for UHH members with FMD laptops</h4>
+<div class="alert alert-warning">
+  <h4>Note for UHH members with FMD laptops:</h4>
   <ul>
-    <li>If you use an <strong>FMD laptop</strong> please install the software listed below via the <a href="https://rrz-serviceportal.uni-hamburg.de/" target="_blank" rel="noopener noreferrer">RRZ Self-Service Portal</a>.</li>
+    <li>If you use an <strong>FMD laptop</strong>, please install the software listed below via the <a href="https://rrz-serviceportal.uni-hamburg.de/" target="_blank" rel="noopener noreferrer">RRZ Self-Service Portal</a>.</li>
     <li>If not, please follow the <strong>Windows</strong> instructions below.</li>
+    <li>In case you run into any questions, please don't hesitate to ask for help.</li>
   </ul>
 </div>
 
+{% include install_instructions/editor.html %}
+{% include install_instructions/git.html %}
 {% include install_instructions/shell.html %}
 
 <br/>
@@ -22,9 +24,6 @@
     <li>If not, please follow the <strong>Windows</strong> instructions.</li>
   </ul>
 </div>
-
-{% include install_instructions/git.html %}
-{% include install_instructions/editor.html %}
 
 {% if site.flavor == "r" %}
 <!--{% include install_instructions/r.html %}-->
