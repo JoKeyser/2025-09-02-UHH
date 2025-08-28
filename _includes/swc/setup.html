@@ -11,11 +11,6 @@
     <li>In case you run into any questions, please don't hesitate to ask for help.</li>
   </ul>
 </div>
-
-{% include install_instructions/editor.html %}
-{% include install_instructions/git.html %}
-{% include install_instructions/shell.html %}
-
 <br/>
 <div class="info alert-info">
   <h4>Note for Windows Users without an UHH FMD laptop</h4>
@@ -24,6 +19,10 @@
     <li>If not, please follow the <strong>Windows</strong> instructions.</li>
   </ul>
 </div>
+
+{% include install_instructions/editor.html %}
+{% include install_instructions/git.html %}
+{% include install_instructions/shell.html %}
 
 {% if site.flavor == "r" %}
 <!--{% include install_instructions/r.html %}-->
